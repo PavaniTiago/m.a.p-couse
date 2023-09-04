@@ -1,12 +1,9 @@
 import { useState } from "react";
 import { HiChevronDown } from "react-icons/hi";
 
-interface FaqDropdown {
-  question: string;
-  answer: string;
-}
+import DropDownProps from "@/interfaces/DropDownProps";
 
-function FaqDropdown({ question, answer }: FaqDropdown) {
+function FaqDropdown({ question, answer }: DropDownProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
