@@ -7,9 +7,10 @@ interface ModulosProps {
     img: any;
     children: React.ReactNode;
     text: string;
+    person?: string;
 }
 
-export default function Modulos({ title, img, children, text }: ModulosProps) {
+export default function Modulos({ title, img, children, text, person }: ModulosProps) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -19,7 +20,8 @@ export default function Modulos({ title, img, children, text }: ModulosProps) {
                 <div className="from-black via-transparent to-transparent bg-gradient-to-t bottom-0 left-0 right-0 w-full h-[40rem]  absolute"></div>
             <div className="absolute mt-32">
                 <h2 className="text-2xl text-center text-slate-100 tracking-widest mb-2">{text}</h2>
-                <p className="text-3xl tracking-tight px-1 text-center uppercase font-extrabold font-inter bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">{title}</p>
+                <p className="text-2xl tracking-tight px-3 text-center uppercase font-extrabold font-inter bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">{title}</p>
+                <p className="text-xs mt-1 text-center font-inter uppercase text-slate-100">{person}</p>
             </div>
             </div>
             <div className="py-4 md:py-6 pl-4 w-full">

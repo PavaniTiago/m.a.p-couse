@@ -41,6 +41,7 @@ import "swiper/css/pagination";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { init, track } from "fbq";
 
 const LazyBonus = lazy(() => import("@/components/LazyBonus"))
 const LazyDropDown = lazy(() => import("@/components/LazyDropDown"))
@@ -48,9 +49,16 @@ const LazyGarantia = lazy(() => import("@/components/LazyGarantia"))
 const LazyPrices = lazy(() => import("@/components/LazyPrices"))
 
 export default function Home() {
+  const pixel = '716507180084377';
+
   useEffect(() => {
     Aos.init({ duration: 1000 });
+    init(pixel)
+    track('PageView')
+    track('InitiateCheckout')
   }, []);
+
+
 
   return (
     <main className="min-h-screen overflow-hidden">
@@ -73,9 +81,7 @@ export default function Home() {
         </div>
         <div className="bg-black w-full h-[32rem] md:hidden"></div>
         <div
-          data-aos="fade-left"
-          data-aos-duration="650"
-          className="absolute top-[18rem] md:top-[12rem] 3xl:top-[10rem] md:mb-[6rem] flex flex-col 3xl:max-w-5xl items-center justify-center"
+          className="absolute top-[18rem] md:top-[8rem] 3xl:top-[10rem] md:mb-[6rem] flex flex-col 3xl:max-w-5xl items-center justify-center"
         >
           <h1 className="text-center text-white text-3xl md:text-6xl 3xl:text-7xl font-semibold bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">
             Método Alessandra <br /> Pavani
@@ -83,15 +89,14 @@ export default function Home() {
           <h2 className="3xl:text-3xl text-xl md:text-3xl md:font-semibold mt-3 text-white leading-tight sm:px-4 text-center">
             Seja um{" "}
             <span className="bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">
-              cabeleireiro referência
+              profissional referência 
             </span>{" "}
-            em curvaturas aonde
-            <br /> somos 70% da população Brasileira cabelos cacheados e crespo,
-            <br />            aumentando o seu{" "}
-            <span className="bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">
+            em curvaturas!
+            <br /> somos 60% da população Brasileira cabelos cacheados e crespo.
+            <br /> venha para esse universo, 
+            <br /> aumentando o seu <span className="bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">
               faturamento mensal
-            </span>
-            .
+            </span> de 3 a 5 mil reais.{" "}
           </h2>
           <p className="mt-4 mb-8 md:text-lg text-gray-300 sm:max-w-md md:max-w-2xl mx-auto sm:px-8 text-center">
             Proporcionando resultado incríveis para suas clientes!
@@ -101,7 +106,7 @@ export default function Home() {
             src="https://www.youtube.com/embed/z4vxqN-Kw6w"
           ></iframe>
           <a href="https://pay.hotmart.com/S83235822U?off=dysrtym2" target="blank">
-            <button className="ease-in-out duration-300 hover:bg-neutral-900 hover:text-slate-50 mt-4 md:mt-0 3xl:mt-4 mx-auto md:w-[42rem] flex justify-center px-16 py-3 bg-slate-50 font-semibold text-xl md:text-2xl rounded transition-colors cursor-pointer shadow-lg">
+            <button id="checkOutButton" className="ease-in-out duration-300 hover:bg-neutral-900 hover:text-slate-50 mt-4 md:mt-0 3xl:mt-4 mx-auto md:w-[42rem] flex justify-center px-16 py-3 bg-slate-50 font-semibold text-xl md:text-2xl rounded transition-colors cursor-pointer shadow-lg">
               Inscreva-se agora
             </button>
           </a>
@@ -123,8 +128,8 @@ export default function Home() {
           data-aos-duration="650"
           className="text-2xl md:text-3xl text-neutral-300 pb-14 md:pb-10 text-center"
         >
-          Aulas teóricas e práticas com modelos
-          <br /> para elevar a sua especialização em curvaturas.
+          Aulas teóricas e práticas com modelos reais,
+          <br /> sem boneca, expandindo o seu conhecimento em curvaturas.
         </p>
         <div className="flex w-fit items-center justify-center flex-col md:flex-row px-4 mx-auto gap-6">
           <div
@@ -178,7 +183,7 @@ export default function Home() {
               </p>
             </Modulos>
 
-            <Modulos title="Big Chop" img={img25} text="MÓDULO">
+            <Modulos title="Big Chop em cabelo crespo" img={img25} text="MÓDULO">
               <p className="font-bold">
                 - Aula 1. <span className="font-normal">Avaliação;</span>
               </p>
@@ -219,7 +224,7 @@ export default function Home() {
               </p>
             </Modulos>
 
-            <Modulos title="Long Bob" img={img23} text="MÓDULO">
+            <Modulos title="Long Bob em cabelo ondulado" img={img23} text="MÓDULO">
               <p className="font-bold">
                 - Aula 1.{" "}
                 <span className="font-normal">
@@ -256,7 +261,7 @@ export default function Home() {
               </p>
             </Modulos>
 
-            <Modulos title="Corte em camadas altas" img={img21} text="MÓDULO">
+            <Modulos title="Corte camadas altas em cabelo cacheado" img={img21} text="MÓDULO">
               <p className="font-bold">
                 - Aula 1. <span className="font-normal">Introdução;</span>
               </p>
@@ -330,7 +335,7 @@ export default function Home() {
               </p>
             </Modulos>
 
-            <Modulos title="corte em camadas médias" img={img29} text="MÓDULO">
+            <Modulos title="corte camadas médias em cabelo cacheado" img={img29} text="MÓDULO">
               <p className="font-bold">
                 - Aula 1. <span className="font-normal">Introdução;</span>
               </p>
@@ -355,7 +360,7 @@ export default function Home() {
               </p>
             </Modulos>
 
-            <Modulos title="Terapia Capilar" img={img36} text="MÓDULO">
+            <Modulos title="Terapia Capilar com a educadora" img={img36} text="MÓDULO" person="@profa_angela_terapeutacapilar">
               <p className="font-bold">
                 - Aula 1. <span className="font-normal">Apresentação;</span>
               </p>
@@ -392,30 +397,34 @@ export default function Home() {
           <div className="px-6 md:px-[28rem] space-y-6 text-xl md:text-3xl md:font-medium text-slate-200 text-center">
             <p>
               <span className="bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">
-                Acesso excluvivo{" "}
+                Mentoria Vip{" "}
               </span>
-              a mentorias ao vivo garantindo sua vaga!
+              em uma comunidade exclusiva para os alunos do método, com aulas ao vivo toda semana para tirar todas as dúvidas.
             </p>
+            <h3 className="text-3xl text-slate-100 uppercase -mb-4 font-bold">
+              Prática de Corte:
+            </h3>
             <p>
-              Acesse ao Método por{" "}
+              ondulados, cacheados, crespos e afro e bônus de transição capilar.
+              {/* Acesse ao Método por{" "}
               <span className="bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">
-                2 anos{" "}
+                1 ano{" "}
               </span>
               E ainda recebendo atualizações com
               <span className="bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">
                 {" "}
                 módulos novos e técnicas exclusivas{" "}
               </span>
-              por um ano. Sem pagar mais nada por isso.
+              por um ano. Sem pagar mais nada por isso. */}
             </p>
             <p>
-              <span className="bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">
+              {/* <span className="bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">
                 Mentoria vip exclusiva{" "}
               </span>
               para os primeiros alunos adquirir o {" "}
               <span className="bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">
                 M.A.P Transformation
-              </span>
+              </span> */}
             </p>
           </div>
           <div className="flex md:flex-row flex-col gap-4">
@@ -438,7 +447,7 @@ export default function Home() {
               <p className="font-normal">
                 - Aulas atualizadas dentro de 1 ano;
               </p>
-              <p className="font-normal">- Acesso por 2 anos;</p>
+              <p className="font-normal">- Acesso por 1 ano;</p>
               <p className="font-normal">
                 - Sem nenhum custo adicional por isso, para aumentar ainda mais
                 o seu conhecimento nas técnicas;
@@ -489,7 +498,7 @@ export default function Home() {
             </LazyBonus>
           </div>
           <a href="https://pay.hotmart.com/S83235822U?off=dysrtym2" target="blank">
-            <button className="ease-in-out duration-300 hover:bg-neutral-900 hover:text-slate-50 mt-4 md:mt-0 3xl:mt-4 mx-auto md:w-[42rem] flex justify-center px-16 py-3 bg-slate-50 font-semibold text-xl md:text-2xl rounded transition-colors cursor-pointer shadow-lg">
+            <button id="checkOutButton" className="ease-in-out duration-300 hover:bg-neutral-900 hover:text-slate-50 mt-4 md:mt-0 3xl:mt-4 mx-auto md:w-[42rem] flex justify-center px-16 py-3 bg-slate-50 font-semibold text-xl md:text-2xl rounded transition-colors cursor-pointer shadow-lg">
               Inscreva-se agora
             </button>
           </a>
@@ -649,7 +658,7 @@ export default function Home() {
             o meu método já formou vários profissonais especialistas em cachos
           </p>
           <a href="https://pay.hotmart.com/S83235822U?off=dysrtym2" target="blank">
-            <button className="ease-in-out duration-300 hover:bg-neutral-900 hover:text-slate-50 mt-4 md:mt-0 3xl:mt-4 mx-auto md:w-[42rem] flex justify-center px-16 py-3 bg-slate-50 font-semibold text-xl md:text-2xl rounded transition-colors cursor-pointer shadow-lg">
+            <button id="checkOutButton" className="ease-in-out duration-300 hover:bg-neutral-900 hover:text-slate-50 mt-4 md:mt-0 3xl:mt-4 mx-auto md:w-[42rem] flex justify-center px-16 py-3 bg-slate-50 font-semibold text-xl md:text-2xl rounded transition-colors cursor-pointer shadow-lg">
               Inscreva-se agora
             </button>
           </a>
@@ -756,7 +765,7 @@ export default function Home() {
           className="bg-neutral-900 hover:text-neutral-900 text-slate-100 mx-auto md:w-[42rem] flex justify-center mb-12 px-16 md:px-2 py-3 
         hover:bg-slate-50 font-semibold text-2xl rounded transition-colors cursor-pointer shadow-xl"
         >
-          <button className="transition-all ease-in-out duration-300">
+          <button id="checkOutButton" className="transition-all ease-in-out duration-300">
             <a href="https://pay.hotmart.com/S83235822U?off=dysrtym2" target="blank">
               Inscreva-se Agora
             </a>
