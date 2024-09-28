@@ -119,7 +119,7 @@ export default function Home() {
               id="checkOutButton"
               className="ease-in-out duration-300 hover:bg-neutral-900 hover:text-slate-50 mt-4 md:mt-0 3xl:mt-4 mx-auto md:w-[42rem] flex justify-center px-16 py-3 bg-slate-50 font-semibold text-xl md:text-2xl rounded transition-colors cursor-pointer shadow-lg"
             >
-              Inscreva-se agora
+              Comece a faturar com o M.A.P
             </button>
           </a>
         </div>
@@ -259,7 +259,7 @@ export default function Home() {
             </Modulos>
 
             <Modulos
-              title="Long Bob em cabelo ondulado"
+              title="Corte Long Bob Cabelo Ondulado curvatura 3A, 3B e 3C"
               img={img23}
               text="MÓDULO"
             >
@@ -300,7 +300,7 @@ export default function Home() {
             </Modulos>
 
             <Modulos
-              title="Corte camadas altas em cabelo cacheado"
+              title="Corte em camadas Altas em cabelo cacheado, curvatura 3B, 4A e 4C"
               img={img21}
               text="MÓDULO"
             >
@@ -336,7 +336,7 @@ export default function Home() {
             </Modulos>
 
             <Modulos
-              title="corte coração em cabelos afro"
+              title="corte coração em cabelos afro curvatura 4C, 5A"
               img={img31}
               text="MÓDULO"
             >
@@ -378,7 +378,7 @@ export default function Home() {
             </Modulos>
 
             <Modulos
-              title="corte camadas médias em cabelo cacheado"
+              title="corte camadas médias em cabelo cacheado curvatura 4A, 4B e 4C"
               img={img29}
               text="MÓDULO"
             >
@@ -407,62 +407,34 @@ export default function Home() {
             </Modulos>
 
             <Modulos
-              title="Terapia Capilar com a educadora"
-              img={img36}
+              title="Corte Pixie Hair Assimétrico na navalha"
+              img={img46}
               text="MÓDULO"
-              person="@profa_angela_terapeutacapilar"
             >
               <p className="font-bold">
-                - Aula 1. <span className="font-normal">Apresentação;</span>
+                - Aula 1. <span className="font-normal">Introdução;</span>
               </p>
               <p className="font-bold">
-                - Aula 2.{" "}
-                <span className="font-normal">
-                  Ciclo de crescimento e tricologia;
-                </span>
+                - Aula 2. <span className="font-normal">Higienização;</span>
               </p>
               <p className="font-bold">
                 - Aula 3.{" "}
-                <span className="font-normal">Alopecias e Tratamentos;</span>
+                <span className="font-normal">Arte do corte na navalha;</span>
               </p>
               <p className="font-bold">
                 - Aula 4.{" "}
-                <span className="font-normal">
-                  Tipos de Cabelos e Curvaturas;
-                </span>
-              </p>
-            </Modulos>
-            <Modulos
-              title="Corte Pixie Hair Assimétrico na navalha"
-              img={img41}
-              text="MÓDULO"
-            >
-              <p className="font-bold">
-                - Aula 1. <span className="font-normal">Em baixo;</span>
+                <span className="font-normal">Acabamento da máquina;</span>
               </p>
               <p className="font-bold">
-                - Aula 2. <span className="font-normal">Introdução;</span>
+                - Aula 5. <span className="font-normal">Finalização;</span>
               </p>
               <p className="font-bold">
-                - Aula 3. <span className="font-normal">Higienização;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 4. <span className="font-normal">Arte do Corte;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 5.{" "}
-                <span className="font-normal">Acabamento com a máquina;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 6. <span className="font-normal">Finalização;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 7. <span className="font-normal">Resultado final;</span>
+                - Aula 6. <span className="font-normal">Resultado final;</span>
               </p>
             </Modulos>
             <Modulos
               title="Corte molhado em Camadas Conectadas com Franja"
-              img={img46}
+              img={img41}
               text="MÓDULO"
             >
               <p className="font-bold">
@@ -508,95 +480,221 @@ export default function Home() {
               text="MÓDULO"
             >
               <p className="font-bold">
-                - Aula 1. <span className="font-normal">Corte molhado passo a passo;</span>
+                - Aula 1.{" "}
+                <span className="font-normal">
+                  Corte molhado passo a passo;
+                </span>
               </p>
             </Modulos>
 
             <Modulos
-              title="Teoria da Colorimetria"
-              img={img42}
+              title="Terapia Capilar com a educadora"
+              img={img36}
               text="MÓDULO"
+              person="@profa_angela_terapeutacapilar"
             >
               <p className="font-bold">
-                - Aula 1. <span className="font-normal">Princípios básicos- Na Colorimetria;</span>
+                - Aula 1. <span className="font-normal">Apresentação;</span>
               </p>
               <p className="font-bold">
-                - Aula 2. <span className="font-normal">Fundo de Clareamento/ Números na tabela de cores;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 3.{" "}
+                - Aula 2.{" "}
                 <span className="font-normal">
-                  Cores primárias e secundárias;
+                  Ciclo de crescimento e tricologia;
                 </span>
               </p>
               <p className="font-bold">
-                - Aula 4. <span className="font-normal">Cores Terciárias e Neutralizações;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 5. <span className="font-normal">Retoque de Raiz Colocação;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 6.{" "}
-                <span className="font-normal">Como avaliar o cabelo da cliente;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 7. <span className="font-normal">Cobertura de branco;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 8.{" "}
-                <span className="font-normal">Retoque de raiz - Preparação da Cliente;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 9. <span className="font-normal">Como preparar os produtos para aplicar na sua cliente;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 10.{" "}
-                <span className="font-normal">Aplicação das técnicas da colocação passo a passo;</span>
-              </p>
-            </Modulos>
-
-            <Modulos
-              title="Mechas Fre Hands mão livre"
-              img={img49}
-              text="MÓDULO"
-            >
-              <p className="font-bold">
-                - Aula 1. <span className="font-normal">Técnica de mãos livres;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 2. <span className="font-normal">Aplicação da técnica passo a passo;</span>
-              </p>
-              <p className="font-bold">
                 - Aula 3.{" "}
+                <span className="font-normal">Alopecias e Tratamentos;</span>
+              </p>
+              <p className="font-bold">
+                - Aula 4.{" "}
                 <span className="font-normal">
-                Como lavar o cabelo no lavatório sem manchar as mechas;
+                  Tipos de Cabelos e Curvaturas;
                 </span>
               </p>
-              <p className="font-bold">
-                - Aula 4. <span className="font-normal">Tonalização das mechas + tratamento;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 5. <span className="font-normal">Finalização Conceitual;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 6.{" "}
-                <span className="font-normal">Secagem com difusor, dica de volume;</span>
-              </p>
-              <p className="font-bold">
-                - Aula 7. <span className="font-normal">Resultado final;</span>
-              </p>
             </Modulos>
+          </div>
+        </div>
+      </div>
 
-            <Modulos
+      <div className="bg-gradient-to-r from-orange-300 to-yellow-700/90 w-full h-16 flex items-center justify-center">
+        <h2 className="text-2xl font-bold text-slate-100">Colorimetria</h2>
+      </div>
+
+      <div className="bg-gradient-to-b from-black to-[#2d1a10] flex w-full py-20 items-center justify-center flex-col md:flex-row px-4 mx-auto gap-6">
+        <div
+          data-aos="fade-bottom"
+          data-aos-duration="1000"
+          className="flex flex-wrap max-w-5xl items-center justify-center gap-6"
+        >
+          <Modulos title="Teoria da Colorimetria" img={img49} text="MÓDULO">
+            <p className="font-bold">
+              - Aula 1.{" "}
+              <span className="font-normal">
+                Princípios básicos- Na Colorimetria;
+              </span>
+            </p>
+            <p className="font-bold">
+              - Aula 2.{" "}
+              <span className="font-normal">
+                Fundo de Clareamento/ Números na tabela de cores;
+              </span>
+            </p>
+            <p className="font-bold">
+              - Aula 3.{" "}
+              <span className="font-normal">
+                Cores primárias e secundárias;
+              </span>
+            </p>
+            <p className="font-bold">
+              - Aula 4.{" "}
+              <span className="font-normal">
+                Cores Terciárias e Neutralizações;
+              </span>
+            </p>
+            <p className="font-bold">
+              - Aula 5.{" "}
+              <span className="font-normal">Retoque de Raiz Colocação;</span>
+            </p>
+            <p className="font-bold">
+              - Aula 6.{" "}
+              <span className="font-normal">
+                Como avaliar o cabelo da cliente;
+              </span>
+            </p>
+            <p className="font-bold">
+              - Aula 7.{" "}
+              <span className="font-normal">Cobertura de branco;</span>
+            </p>
+            <p className="font-bold">
+              - Aula 8.{" "}
+              <span className="font-normal">
+                Retoque de raiz - Preparação da Cliente;
+              </span>
+            </p>
+            <p className="font-bold">
+              - Aula 9.{" "}
+              <span className="font-normal">
+                Como preparar os produtos para aplicar na sua cliente;
+              </span>
+            </p>
+            <p className="font-bold">
+              - Aula 10.{" "}
+              <span className="font-normal">
+                Aplicação das técnicas da colocação passo a passo;
+              </span>
+            </p>
+          </Modulos>
+
+          <Modulos
+            title="colorimetria Retoque de Raiz dos brancos"
+            img={img42}
+            text="MÓDULO"
+          >
+            <p className="font-bold">
+              - Aula 1. <span className="font-normal">Introdução;</span>
+            </p>
+            <p className="font-bold">
+              - Aula 2.{" "}
+              <span className="font-normal">
+                Como avaliar o cabelo da cliente;
+              </span>
+            </p>
+            <p className="font-bold">
+              - Aula 3.{" "}
+              <span className="font-normal">Cobertura de branco;</span>
+            </p>
+            <p className="font-bold">
+              - Aula 4.{" "}
+              <span className="font-normal">
+                Retoque de raiz - Preparação da Cliente;
+              </span>
+            </p>
+            <p className="font-bold">
+              - Aula 5.{" "}
+              <span className="font-normal">
+                Como preparar os produtos para aplicar na sua cliente;
+              </span>
+            </p>
+            <p className="font-bold">
+              - Aula 6.{" "}
+              <span className="font-normal">
+                Aplicação das técnicas da colocação passo a passo;
+              </span>
+            </p>
+          </Modulos>
+
+          <Modulos title="Teoria da Colorimetria" img={img49} text="MÓDULO">
+            <p className="font-bold">
+              - Aula 1.{" "}
+              <span className="font-normal">
+                Princípios básicos- Na Colorimetria;
+              </span>
+            </p>
+            <p className="font-bold">
+              - Aula 2.{" "}
+              <span className="font-normal">
+                Fundo de Clareamento/ Números na tabela de cores;
+              </span>
+            </p>
+            <p className="font-bold">
+              - Aula 3.{" "}
+              <span className="font-normal">
+                Cores primárias e secundárias;
+              </span>
+            </p>
+            <p className="font-bold">
+              - Aula 4.{" "}
+              <span className="font-normal">
+                Cores Terciárias e Neutralizações;
+              </span>
+            </p>
+            <p className="font-bold">
+              - Aula 5.{" "}
+              <span className="font-normal">Retoque de Raiz Colocação;</span>
+            </p>
+            <p className="font-bold">
+              - Aula 6.{" "}
+              <span className="font-normal">
+                Como avaliar o cabelo da cliente;
+              </span>
+            </p>
+            <p className="font-bold">
+              - Aula 7.{" "}
+              <span className="font-normal">Cobertura de branco;</span>
+            </p>
+            <p className="font-bold">
+              - Aula 8.{" "}
+              <span className="font-normal">
+                Retoque de raiz - Preparação da Cliente;
+              </span>
+            </p>
+            <p className="font-bold">
+              - Aula 9.{" "}
+              <span className="font-normal">
+                Como preparar os produtos para aplicar na sua cliente;
+              </span>
+            </p>
+            <p className="font-bold">
+              - Aula 10.{" "}
+              <span className="font-normal">
+                Aplicação das técnicas da colocação passo a passo;
+              </span>
+            </p>
+          </Modulos>
+
+          <Modulos
               title="Morena iluminada Técnica mechas na água"
               img={img44}
               text="MÓDULO"
             >
               <p className="font-bold">
-                - Aula 1. <span className="font-normal">técnica de mechas na água;</span>
+                - Aula 1.{" "}
+                <span className="font-normal">técnica de mechas na água;</span>
               </p>
               <p className="font-bold">
-                - Aula 2. <span className="font-normal">preparação no lavatório;</span>
+                - Aula 2.{" "}
+                <span className="font-normal">preparação no lavatório;</span>
               </p>
               <p className="font-bold">
                 - Aula 3.{" "}
@@ -605,37 +703,97 @@ export default function Home() {
                 </span>
               </p>
               <p className="font-bold">
-                - Aula 4. <span className="font-normal">materiais para o procedimento;</span>
+                - Aula 4.{" "}
+                <span className="font-normal">
+                  materiais para o procedimento;
+                </span>
               </p>
               <p className="font-bold">
-                - Aula 5. <span className="font-normal">técnica da plaqueta, com os produtos;</span>
+                - Aula 5.{" "}
+                <span className="font-normal">
+                  técnica da plaqueta, com os produtos;
+                </span>
               </p>
               <p className="font-bold">
                 - Aula 6.{" "}
-                <span className="font-normal">como tirar no produto no lavatório e mais o controle PH do fio;</span>
+                <span className="font-normal">
+                  como tirar no produto no lavatório e mais o controle PH do
+                  fio;
+                </span>
               </p>
               <p className="font-bold">
-                - Aula 7. <span className="font-normal">Como aplicar o Tonalizante certo;</span>
+                - Aula 7.{" "}
+                <span className="font-normal">
+                  Como aplicar o Tonalizante certo;
+                </span>
               </p>
               <p className="font-bold">
                 - Aula 8.{" "}
-                <span className="font-normal">aplicação do tratamento das mechas na água;</span>
+                <span className="font-normal">
+                  aplicação do tratamento das mechas na água;
+                </span>
               </p>
               <p className="font-bold">
-                - Aula 9. <span className="font-normal">finalização com muito volume;</span>
+                - Aula 9.{" "}
+                <span className="font-normal">
+                  finalização com muito volume;
+                </span>
               </p>
               <p className="font-bold">
                 - Aula 10.{" "}
-                <span className="font-normal">Secagem com difusor e mais o Volumão;</span>
+                <span className="font-normal">
+                  Secagem com difusor e mais o Volumão;
+                </span>
               </p>
               <p className="font-bold">
-                - Aula 11.{" "}
-                <span className="font-normal">Resultado final;</span>
+                - Aula 11. <span className="font-normal">Resultado final;</span>
               </p>
             </Modulos>
-          </div>
+
+            <Modulos
+              title="Mechas Free Hands mão livre"
+              img={img43}
+              text="MÓDULO"
+            >
+              <p className="font-bold">
+                - Aula 1.{" "}
+                <span className="font-normal">Técnica de mãos livres;</span>
+              </p>
+              <p className="font-bold">
+                - Aula 2.{" "}
+                <span className="font-normal">
+                  Aplicação da técnica passo a passo;
+                </span>
+              </p>
+              <p className="font-bold">
+                - Aula 3.{" "}
+                <span className="font-normal">
+                  Como lavar o cabelo no lavatório sem manchar as mechas;
+                </span>
+              </p>
+              <p className="font-bold">
+                - Aula 4.{" "}
+                <span className="font-normal">
+                  Tonalização das mechas + tratamento;
+                </span>
+              </p>
+              <p className="font-bold">
+                - Aula 5.{" "}
+                <span className="font-normal">Finalização Conceitual;</span>
+              </p>
+              <p className="font-bold">
+                - Aula 6.{" "}
+                <span className="font-normal">
+                  Secagem com difusor, dica de volume;
+                </span>
+              </p>
+              <p className="font-bold">
+                - Aula 7. <span className="font-normal">Resultado final;</span>
+              </p>
+            </Modulos>
         </div>
       </div>
+
       <div className="bg-gradient-to-r from-orange-300 to-yellow-700/90 w-full h-16 flex items-center justify-center">
         <h2 className="text-2xl font-bold text-slate-100">
           Além de tudo isso...
@@ -771,19 +929,6 @@ export default function Home() {
               </p>
               <p className="font-bold">
                 - Aula 10. <span className="font-normal">Antes e Depois;</span>
-              </p>
-            </LazyBonus>
-            <LazyBonus
-              title="Posicionamento Digital no Instagram"
-              img={img45}
-              text="BÔNUS"
-              person="@alessandrapavani"
-            >
-              <p className="font-bold">
-                - Aula 1.{" "}
-                <span className="font-normal">
-                  avaliação com a cliente na transição capilar
-                </span>
               </p>
             </LazyBonus>
           </div>
