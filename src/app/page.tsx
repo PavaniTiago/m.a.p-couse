@@ -624,65 +624,6 @@ export default function Home() {
             </p>
           </Modulos>
 
-          <Modulos title="Teoria da Colorimetria" img={img49} text="MÓDULO">
-            <p className="font-bold">
-              - Aula 1.{" "}
-              <span className="font-normal">
-                Princípios básicos- Na Colorimetria;
-              </span>
-            </p>
-            <p className="font-bold">
-              - Aula 2.{" "}
-              <span className="font-normal">
-                Fundo de Clareamento/ Números na tabela de cores;
-              </span>
-            </p>
-            <p className="font-bold">
-              - Aula 3.{" "}
-              <span className="font-normal">
-                Cores primárias e secundárias;
-              </span>
-            </p>
-            <p className="font-bold">
-              - Aula 4.{" "}
-              <span className="font-normal">
-                Cores Terciárias e Neutralizações;
-              </span>
-            </p>
-            <p className="font-bold">
-              - Aula 5.{" "}
-              <span className="font-normal">Retoque de Raiz Colocação;</span>
-            </p>
-            <p className="font-bold">
-              - Aula 6.{" "}
-              <span className="font-normal">
-                Como avaliar o cabelo da cliente;
-              </span>
-            </p>
-            <p className="font-bold">
-              - Aula 7.{" "}
-              <span className="font-normal">Cobertura de branco;</span>
-            </p>
-            <p className="font-bold">
-              - Aula 8.{" "}
-              <span className="font-normal">
-                Retoque de raiz - Preparação da Cliente;
-              </span>
-            </p>
-            <p className="font-bold">
-              - Aula 9.{" "}
-              <span className="font-normal">
-                Como preparar os produtos para aplicar na sua cliente;
-              </span>
-            </p>
-            <p className="font-bold">
-              - Aula 10.{" "}
-              <span className="font-normal">
-                Aplicação das técnicas da colocação passo a passo;
-              </span>
-            </p>
-          </Modulos>
-
           <Modulos
               title="Morena iluminada Técnica mechas na água"
               img={img44}
