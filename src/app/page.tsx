@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 
 import bg from "public/assets/bg.webp";
+import selo2 from "public/assets/selo.png"
 import bgResponsive from "public/assets/bgResponsive.webp";
 import img9 from "public/assets/img9.webp";
 import img14 from "public/assets/img14.webp";
@@ -130,9 +131,9 @@ export default function Home() {
           data-aos-duration="650"
           className="text-neutral-200 text-4xl md:text-5xl font-bold leading-[3rem] pt-32 pb-2 md:pb-6 text-center"
         >
-          Comece a faturar com o{" "}
+          Comece a faturar com as Artes dos{" "}
           <span className="bg-gradient-to-r from-orange-300 to-yellow-700/90 bg-clip-text text-transparent">
-            M.A.P
+            Cachos!
           </span>
         </h1>
         <p
@@ -996,6 +997,21 @@ export default function Home() {
             </Swiper>
           </div>
         </div>
+      </div>
+      
+      <div className="w-full bg-gradient-to-b from-yellow-700/90 to-black flex flex-col-reverse md:flex-row items-center justify-center pb-12  md:gap-32 md:py-20">
+        <div className="w-full max-w-xl text-xl px-12 flex flex-col gap-3 text-center text-white md:text-start font-medium">
+         <p>
+          Única Formação com 2 certificados reconhecidos nacional e internacionalmente pela FEPCSSP-Escola de Cabeleireiros da Federação Paulista do Brasil, o único órgão regulamentado em mais de 130 países.
+         </p>
+         <p>
+         Você terá o certificado de formação Especialista em Cachos Alessandra Pavani, com o selo exclusivo no seu certificado!
+         </p>
+         <p>
+         Você poderá atuar fora do Brasil, com o seu certificado do Método Alessandra Pavani.
+         </p>
+        </div>
+        <Image decoding="async" src={selo2} className="w-[32rem]" alt="" />  
       </div>
 
       <div className="w-full bg-black flex flex-col md:flex-row items-center justify-center gap-x-24 pt-16">
